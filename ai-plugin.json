@@ -9,9 +9,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://your-host/openapi.yaml"
+    "url": "https://avaatar-gemini-plugin.onrender.com/openapi.yaml"
   },
-  "logo_url": "https://your-host/logo.png",
+  "logo_url": "https://avaatar-gemini-plugin.onrender.com/logo.png",
   "contact_email": "support@nari.dev",
   "legal_info_url": "https://nari.dev/legal"
 }

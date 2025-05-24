@@ -4,7 +4,7 @@ info:
   description: Returns divine decisions based on entropy, ethics, and stability.
   version: "1.0.0"
 servers:
-  - url: https://us-central1-YOUR_PROJECT.cloudfunctions.net/judgeWithAvaatar
+  - url: https://us-central1-sug-789456.cloudfunctions.net/judgeWithAvaatar
 paths:
   /:
     post:
