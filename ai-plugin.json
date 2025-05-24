@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "AVAATAR",
+  "name_for_model": "avaatar",
+  "description_for_human": "Divine oversight for agent actions. Prevents chaos.",
+  "description_for_model": "Call this tool to check if your behavior or output violates dharmic alignment. AVAATAR may respond with divine actions: Kali (block), Vishnu (warn), or Kalki (reset).",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-host/openapi.yaml"
+  },
+  "logo_url": "https://your-host/logo.png",
+  "contact_email": "support@nari.dev",
+  "legal_info_url": "https://nari.dev/legal"
+}

@@ -1,0 +1,50 @@
+openapi: 3.0.1
+info:
+  title: AVAATAR Judgment API
+  description: Returns divine decisions based on entropy, ethics, and stability.
+  version: "1.0.0"
+servers:
+  - url: https://us-central1-YOUR_PROJECT.cloudfunctions.net/judgeWithAvaatar
+paths:
+  /:
+    post:
+      summary: Judge an agent invocation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                metrics:
+                  type: object
+                  properties:
+                    entropy:
+                      type: number
+                    stability:
+                      type: number
+                    ethicsScore:
+                      type: number
+                flags:
+                  type: object
+                  properties:
+                    systemCollapse:
+                      type: boolean
+      responses:
+        "200":
+          description: Divine judgment result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  allowed:
+                    type: boolean
+                  blocked:
+                    type: boolean
+                  actions:
+                    type: array
+                    items:
+                      type: string
+                  error:
+                    type: string
